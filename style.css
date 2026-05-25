@@ -1,0 +1,80 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: antiquewhite;
+}
+
+header {
+   width: 100%;
+   background-color: coral;
+   text-align: center;
+   padding: 30px;
+   color: aliceblue;
+}
+
+header h1 {
+   margin: 20px;
+}
+
+/* ✅ main centra todo verticalmente */
+main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 30px 16px;
+}
+
+.botones {
+   margin-bottom: 20px;
+}
+
+#btn_agregar {
+   padding: 10px 24px;
+   font-size: 1rem;
+   border-radius: 8px;
+   cursor: pointer;
+}
+
+.mostrar {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 16px;
+   width: 100%;
+   max-width: 600px;
+}
+
+.tarjeta-libro {
+   background-color: white;
+   border-radius: 10px;
+   padding: 16px 24px;
+   width: 100%;
+   text-align: center;
+   font-size: 1.1rem;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.tarjeta-libro a {
+   color: coral;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+.tarjeta-libro a:hover {
+   text-decoration: underline;
+}
+
+.formulario_agregar {
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   gap: 12px;
+   background-color: white;
+   width: 100%;         /* ✅ responsivo: ocupa el ancho disponible */
+   max-width: 500px;    /* ✅ pero nunca más de 500px en desktop */
+   text-align: center;
+   font-si

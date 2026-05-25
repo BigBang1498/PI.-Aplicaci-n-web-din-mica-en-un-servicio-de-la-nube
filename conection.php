@@ -1,9 +1,9 @@
 <?php
-    $host = 'localhost';
+    $host = 'dpg-d89sg5egvqtc73c9s7pg-a';
     $port = '5432';
-    $dbname = 'mylibrary';
-    $user = 'postgres';
-    $pass = '123456789';
+    $dbname = 'mylibrary_dbr0';
+    $user = 'mylibrary_dbr0_user';
+    $pass = 'FpkCgff0UQ2sY5uFO3T2RVAJxjqzQh98';
 
     $dsn = "pgsql:host=$host;port=$port; dbname=$dbname";
 

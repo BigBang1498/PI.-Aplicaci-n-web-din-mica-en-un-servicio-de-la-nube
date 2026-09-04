@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Obteniendo el código del repositorio ...'
-                git branch: 'master' url: 'git@github.com:BigBang1498/PI.-Aplicaci-n-web-din-mica-en-un-servicio-de-la-nube.git'
+                git branch: 'master', url: 'git@github.com:BigBang1498/PI.-Aplicaci-n-web-din-mica-en-un-servicio-de-la-nube.git'
                 
             }
         }

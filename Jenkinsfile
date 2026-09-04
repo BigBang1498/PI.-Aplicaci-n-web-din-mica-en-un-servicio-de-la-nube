@@ -15,8 +15,10 @@ pipeline {
         }
 
         stage('Deploy') {
-            echo 'Notificando a Render para iniciar el despliegue...'
-            sh 'curl -X POST "$RENDER_HOOK"'
+            steps {
+                echo 'Notificando a Render para iniciar el despliegue...'
+                sh 'curl -X POST "$RENDER_HOOK"'
+            }
         }
 
     }
